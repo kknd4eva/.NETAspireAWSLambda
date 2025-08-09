@@ -1,0 +1,35 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: AspireLambda - Sample SAM Template for addition function
+
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 256
+
+Resources:
+  AddFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: ./
+      Handler: AspireLambda::AspireLambda.Functions::AddFunctionHandler
+      Runtime: dotnet8
+      Architectures:
+      - x86_64
+      Events:
+        AddApi:
+          Type: HttpApi
+          Properties:
+            Path: /add/{x}/{y}
+            Method: get
+
+Outputs:
+  AddApi:
+    Description: "API Gateway endpoint URL for Prod stage for Add function"
+    Value: !Sub "https://${ServerlessHttpApi}.execute-api.${AWS::Region}.amazonaws.com/add/{x}/{y}"
+  AddFunction:
+    Description: "Add Lambda Function ARN"
+    Value: !GetAtt AddFunction.Arn
+  AddFunctionIamRole:
+    Description: "Implicit IAM Role created for Add function"
+    Value: !GetAtt AddFunctionRole.Arn

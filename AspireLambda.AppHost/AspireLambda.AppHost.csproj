@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.3.1" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>e5d75544-46f0-4b2f-b7e6-8905721b58e2</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.3.1" />
+    <PackageReference Include="Aspire.Hosting.AWS" Version="9.2.6" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="9.4.0" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="4.0.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireLambda\AspireLambda.csproj" />
+  </ItemGroup>
+
+</Project>

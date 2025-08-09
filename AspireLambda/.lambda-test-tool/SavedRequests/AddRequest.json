@@ -1,0 +1,34 @@
+{
+  "version": "2.0",
+  "routeKey": "GET /add/{x}/{y}",
+  "rawPath": "/prod/add/5/7",
+  "rawQueryString": "",
+  "headers": {
+    "Host": "abc123.execute-api.us-east-1.amazonaws.com",
+    "User-Agent": "curl/8.5.0",
+    "Accept": "*/*"
+  },
+  "requestContext": {
+    "accountId": "123456789012",
+    "apiId": "abc123",
+    "domainName": "abc123.execute-api.us-east-1.amazonaws.com",
+    "domainPrefix": "abc123",
+    "http": {
+      "method": "GET",
+      "path": "/prod/add/5/7",
+      "protocol": "HTTP/1.1",
+      "sourceIp": "203.0.113.1",
+      "userAgent": "curl/8.5.0"
+    },
+    "requestId": "XYZaBcDeF=",
+    "routeKey": "GET /add/{x}/{y}",
+    "stage": "prod",
+    "time": "12/Mar/2020:19:03:58 +0000",
+    "timeEpoch": 1583348638390
+  },
+  "pathParameters": {
+    "x": "5",
+    "y": "7"
+  },
+  "isBase64Encoded": false
+}
