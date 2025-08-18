@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireLambda.AppHost", "Asp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireLambda.ServiceDefaults", "AspireLambda.ServiceDefaults\AspireLambda.ServiceDefaults.csproj", "{76C8A538-A887-4686-AA82-893364243743}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireLambda.UnitTests", "AspireLambda.UnitTests\AspireLambda.UnitTests.csproj", "{92FBF9EC-D536-4AF4-BD49-C06A3879400B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireLambda.IntegrationTests", "AspireLambda.IntegrationTests\AspireLambda.IntegrationTests.csproj", "{2B732B6D-7F63-4599-96F9-18E19B25ADD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{76C8A538-A887-4686-AA82-893364243743}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76C8A538-A887-4686-AA82-893364243743}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76C8A538-A887-4686-AA82-893364243743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92FBF9EC-D536-4AF4-BD49-C06A3879400B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92FBF9EC-D536-4AF4-BD49-C06A3879400B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92FBF9EC-D536-4AF4-BD49-C06A3879400B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92FBF9EC-D536-4AF4-BD49-C06A3879400B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B732B6D-7F63-4599-96F9-18E19B25ADD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B732B6D-7F63-4599-96F9-18E19B25ADD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B732B6D-7F63-4599-96F9-18E19B25ADD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B732B6D-7F63-4599-96F9-18E19B25ADD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
