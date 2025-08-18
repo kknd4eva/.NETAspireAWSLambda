@@ -215,6 +215,36 @@ This demo showcases how to:
 4. **Improve Debugging**: Distributed tracing across all components
 5. **Enhance Maintainability**: Structured, testable, observable code
 
+## 🧪 Testing
+
+This project includes comprehensive unit and integration tests that demonstrate how to effectively test serverless applications using Aspire's local development capabilities.
+
+### Test Structure
+- **Unit Tests**: 7 tests covering configuration, models, and business logic
+- **Integration Tests**: 10+ tests demonstrating Lambda function behavior and Aspire resource integration
+
+### Running Tests
+```bash
+# Run all unit tests (no external dependencies)
+dotnet test AspireLambda.UnitTests
+
+# Run integration tests (some require Aspire resources)
+dotnet test AspireLambda.IntegrationTests
+
+# Build and test everything
+dotnet build && dotnet test
+```
+
+### What's Tested
+- Configuration binding and validation
+- DynamoDB model attributes and data handling
+- Lambda function request/response processing
+- API Gateway integration patterns
+- JSON serialization and business logic
+- Aspire resource connection patterns
+
+See [TESTING.md](TESTING.md) for detailed testing documentation and best practices.
+
 ## ?? Contributing
 
 This is a demo project showcasing integration patterns. Feel free to:
